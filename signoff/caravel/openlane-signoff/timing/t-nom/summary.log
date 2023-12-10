@@ -1,0 +1,58 @@
+-------------------------------------------------------------------------------------------------
+SUMMARY
+-------------------------------------------------------------------------------------------------
+
+ corner|     min delay |  min reg2reg |    max delay |  max reg2reg |      max cap |     max slew
+-------------------------------------------------------------------------------------------------
+  t-nom|           met |          met |          met |          met |   vio(-0.03) |   vio(-0.73)
+
+violating reg2reg min reports
+
+
+violating reg2reg max reports
+
+
+--------------------------------------------------------------------------------------------
+COMMAND
+--------------------------------------------------------------------------------------------
+
+exec> report_check_types \
+        -max_slew \
+        -max_capacitance \
+        -recovery \
+        -removal \
+        -format end \
+        -violators
+design: caravel
+time: Sun Dec 10 01:33:47 UTC 2023
+
+--------------------------------------------------------------------------------------------
+REPORT
+--------------------------------------------------------------------------------------------
+
+
+max slew
+
+Pin                                    Limit    Slew   Slack
+------------------------------------------------------------
+chip_core/mprj/j1a/_53164_/D            4.00    4.73   -0.73 (VIOLATED)
+chip_core/mprj/j1a/ANTENNA__53164__D/I    4.00    4.73   -0.73 (VIOLATED)
+chip_core/mprj/j1a/_44853_/ZN           4.00    4.73   -0.73 (VIOLATED)
+chip_core/mprj/j1a/_32978_/A2           4.00    4.18   -0.18 (VIOLATED)
+chip_core/mprj/j1a/ANTENNA__32978__A2/I    4.00    4.18   -0.18 (VIOLATED)
+chip_core/mprj/j1a/_32977_/ZN           4.00    4.17   -0.17 (VIOLATED)
+chip_core/mprj/j1a/ANTENNA__35058__A2/I    4.00    4.06   -0.06 (VIOLATED)
+chip_core/mprj/j1a/_35058_/A2           4.00    4.06   -0.06 (VIOLATED)
+chip_core/mprj/j1a/_35057_/ZN           4.00    4.06   -0.06 (VIOLATED)
+chip_core/mprj/j1a/ANTENNA__34547__A2/I    4.00    4.02   -0.02 (VIOLATED)
+chip_core/mprj/j1a/_34547_/A2           4.00    4.02   -0.02 (VIOLATED)
+chip_core/mprj/j1a/_34546_/ZN           4.00    4.02   -0.02 (VIOLATED)
+chip_core/mprj/j1a/_29587_/A1           4.00    4.00   -0.00 (VIOLATED)
+chip_core/mprj/j1a/ANTENNA__29587__A1/I    4.00    4.00   -0.00 (VIOLATED)
+
+max capacitance
+
+Pin                                    Limit     Cap   Slack
+------------------------------------------------------------
+chip_core/mprj/j1a/_44853_/ZN           0.13    0.16   -0.03 (VIOLATED)
+

@@ -70,40 +70,30 @@ module user_project_wrapper #(
 /* User project is instantiated  here   */
 /*--------------------------------------*/
 
-user_proj_example mprj (
+J1Asic j1a (
 `ifdef USE_POWER_PINS
-	.vdd(vdd),	// User area 1 1.8V power
-	.vss(vss),	// User area 1 digital ground
+	.vdd(vdd),
+	.vss(vss),
 `endif
 
-    .wb_clk_i(wb_clk_i),
-    .wb_rst_i(wb_rst_i),
-
-    // MGMT SoC Wishbone Slave
-
-    .wbs_cyc_i(wbs_cyc_i),
-    .wbs_stb_i(wbs_stb_i),
-    .wbs_we_i(wbs_we_i),
-    .wbs_sel_i(wbs_sel_i),
-    .wbs_adr_i(wbs_adr_i),
-    .wbs_dat_i(wbs_dat_i),
-    .wbs_ack_o(wbs_ack_o),
-    .wbs_dat_o(wbs_dat_o),
-
-    // Logic Analyzer
-
-    .la_data_in(la_data_in),
-    .la_data_out(la_data_out),
-    .la_oenb (la_oenb),
+    .reset(wb_rst_i),
+    .boardClk(wb_clk_i),
 
     // IO Pads
 
-    .io_in ({io_in[37:30],io_in[7:0]}),
-    .io_out({io_out[37:30],io_out[7:0]}),
-    .io_oeb({io_oeb[37:30],io_oeb[7:0]}),
-
-    // IRQ
-    .irq(user_irq)
+    .boardClkLocked 	(io_in[29]),
+    .extInt				(io_in[28:26]),
+    .pmodA_read			(io_in[37:30]),
+	  .pmodA_write		(io_out[37:30]),
+	  .pmodA_writeEnable	(io_oeb[37:30]),
+    .rx					(io_in[25]),
+    .tx					(io_out[21]),
+    .tdi				(io_in[24]),
+    .tdo				(io_out[20]),
+    .tms				(io_in[23]),
+    .tck				(io_in[22]),
+    .io_oeb_high        (io_oeb[29:22]),
+    .io_oeb_low         (io_oeb[21:20])
 );
 
 endmodule	// user_project_wrapper
