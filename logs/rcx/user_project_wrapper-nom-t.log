@@ -262,20 +262,21 @@ exec> extract_parasitics  -ext_model_file /home/moss/eda_tools_gf180_new/pdk/gf1
 [INFO RCX-0008] extracting parasitics of user_project_wrapper ...
 [INFO RCX-0435] Reading extraction model file /home/moss/eda_tools_gf180_new/pdk/gf180mcuD/libs.tech//openlane/rules.openrcx.gf180mcuD.nom ...
 [INFO RCX-0436] RC segment generation user_project_wrapper (max_merge_res 50.0) ...
-[INFO RCX-0040] Final 263 rc segments
+[INFO RCX-0040] Final 246 rc segments
 [INFO RCX-0439] Coupling Cap extraction user_project_wrapper ...
 [INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
-[INFO RCX-0043] 391 wires to be extracted
-[INFO RCX-0442] 19% completion -- 76 wires have been extracted
-[INFO RCX-0442] 24% completion -- 97 wires have been extracted
-[INFO RCX-0442] 30% completion -- 118 wires have been extracted
-[INFO RCX-0442] 39% completion -- 155 wires have been extracted
-[INFO RCX-0442] 51% completion -- 201 wires have been extracted
-[INFO RCX-0442] 69% completion -- 270 wires have been extracted
-[INFO RCX-0442] 81% completion -- 318 wires have been extracted
-[INFO RCX-0442] 92% completion -- 361 wires have been extracted
-[INFO RCX-0442] 100% completion -- 391 wires have been extracted
-[INFO RCX-0045] Extract 416 nets, 309 rsegs, 309 caps, 237 ccs
+[INFO RCX-0043] 390 wires to be extracted
+[INFO RCX-0442] 17% completion -- 70 wires have been extracted
+[INFO RCX-0442] 23% completion -- 91 wires have been extracted
+[INFO RCX-0442] 28% completion -- 113 wires have been extracted
+[INFO RCX-0442] 37% completion -- 148 wires have been extracted
+[INFO RCX-0442] 51% completion -- 200 wires have been extracted
+[INFO RCX-0442] 65% completion -- 256 wires have been extracted
+[INFO RCX-0442] 80% completion -- 312 wires have been extracted
+[INFO RCX-0442] 89% completion -- 349 wires have been extracted
+[INFO RCX-0442] 94% completion -- 368 wires have been extracted
+[INFO RCX-0442] 100% completion -- 390 wires have been extracted
+[INFO RCX-0045] Extract 416 nets, 292 rsegs, 292 caps, 208 ccs
 [INFO RCX-0015] Finished extracting user_project_wrapper.
 exec> write_spef /home/moss/eda_tools_gf180_new/caravel_user_project/signoff/user_project_wrapper/openlane-signoff/spef/user_project_wrapper.nom.spef
 [INFO RCX-0016] Writing SPEF ...

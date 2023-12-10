@@ -4,7 +4,7 @@ COMMAND
 
 exec> report_checks \
         -path_delay min \
-        -through _f0ebbe0500000000_p_Instance \
+        -through _003eaf0500000000_p_Instance \
         -format full_clock_expanded \
         -fields {slew cap input_pins nets fanout} \
         -no_line_splits \
@@ -14,14 +14,14 @@ exec> report_checks \
         -unique_paths_to_endpoint \
         
 design: caravel
-time: Sun Dec 10 01:33:33 UTC 2023
+time: Sun Dec 10 16:14:16 UTC 2023
 
 --------------------------------------------------------------------------------------------
 REPORT
 --------------------------------------------------------------------------------------------
 
 Startpoint: chip_core/_37874_ (falling edge-triggered flip-flop clocked by clk)
-Endpoint: chip_core/mprj/j1a/_51724_ (removal check against rising-edge clock clk)
+Endpoint: chip_core/mprj/j1a/_52011_ (removal check against rising-edge clock clk)
 Path Group: asynchronous
 Path Type: min
 
@@ -113,16 +113,16 @@ Fanout     Cap    Slew   Delay    Time   Description
      2    0.01    0.09    0.23   26.56 v chip_core/wire1741/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_4)
                                          chip_core/net1741 (net)
                   0.09    0.00   26.56 v chip_core/mprj/j1a/input11/I (gf180mcu_fd_sc_mcu7t5v0__clkbuf_3)
-     8    0.09    0.42    0.43   26.99 v chip_core/mprj/j1a/input11/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_3)
+     8    0.10    0.43    0.44   27.00 v chip_core/mprj/j1a/input11/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_3)
                                          chip_core/mprj/j1a/net11 (net)
-                  0.42    0.01   27.00 v chip_core/mprj/j1a/_38974_/I (gf180mcu_fd_sc_mcu7t5v0__buf_1)
-     4    0.04    0.39    0.52   27.53 v chip_core/mprj/j1a/_38974_/Z (gf180mcu_fd_sc_mcu7t5v0__buf_1)
-                                         chip_core/mprj/j1a/_17776_ (net)
-                  0.39    0.00   27.53 v chip_core/mprj/j1a/_40311_/I (gf180mcu_fd_sc_mcu7t5v0__clkinv_1)
-     1    0.01    0.23    0.20   27.73 ^ chip_core/mprj/j1a/_40311_/ZN (gf180mcu_fd_sc_mcu7t5v0__clkinv_1)
-                                         chip_core/mprj/j1a/_00059_ (net)
-                  0.23    0.00   27.73 ^ chip_core/mprj/j1a/_51724_/SETN (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
-                                 27.73   data arrival time
+                  0.43    0.02   27.02 v chip_core/mprj/j1a/_39272_/I (gf180mcu_fd_sc_mcu7t5v0__buf_1)
+     4    0.03    0.30    0.47   27.49 v chip_core/mprj/j1a/_39272_/Z (gf180mcu_fd_sc_mcu7t5v0__buf_1)
+                                         chip_core/mprj/j1a/_17950_ (net)
+                  0.30    0.00   27.49 v chip_core/mprj/j1a/_40779_/I (gf180mcu_fd_sc_mcu7t5v0__clkinv_1)
+     1    0.01    0.20    0.18   27.66 ^ chip_core/mprj/j1a/_40779_/ZN (gf180mcu_fd_sc_mcu7t5v0__clkinv_1)
+                                         chip_core/mprj/j1a/_00060_ (net)
+                  0.20    0.00   27.66 ^ chip_core/mprj/j1a/_52011_/SETN (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                 27.66   data arrival time
 
                           0.00    0.00   clock clk (rise edge)
                           0.00    0.00   clock source latency
@@ -198,34 +198,37 @@ Fanout     Cap    Slew   Delay    Time   Description
      2    0.02    0.09    0.23    9.21 ^ chip_core/clkbuf_opt_2_1_clock_ctrl.core_clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_20)
                                          chip_core/clknet_opt_2_1_clock_ctrl.core_clk (net)
                   0.09    0.00    9.21 ^ chip_core/mprj/j1a/clkbuf_0_boardClk/I (gf180mcu_fd_sc_mcu7t5v0__clkbuf_16)
-     4    0.27    0.31    0.38    9.58 ^ chip_core/mprj/j1a/clkbuf_0_boardClk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_16)
+     4    0.24    0.28    0.36    9.57 ^ chip_core/mprj/j1a/clkbuf_0_boardClk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_16)
                                          chip_core/mprj/j1a/clknet_0_boardClk (net)
-                  0.31    0.02    9.61 ^ chip_core/mprj/j1a/clkbuf_1_0_0_boardClk/I (gf180mcu_fd_sc_mcu7t5v0__clkbuf_8)
-     8    0.30    0.64    0.62   10.23 ^ chip_core/mprj/j1a/clkbuf_1_0_0_boardClk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_8)
+                  0.29    0.03    9.59 ^ chip_core/mprj/j1a/clkbuf_1_0_0_boardClk/I (gf180mcu_fd_sc_mcu7t5v0__clkbuf_8)
+     8    0.21    0.46    0.51   10.11 ^ chip_core/mprj/j1a/clkbuf_1_0_0_boardClk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_8)
                                          chip_core/mprj/j1a/clknet_1_0_0_boardClk (net)
-                  0.64    0.02   10.25 ^ chip_core/mprj/j1a/clkbuf_3_0_0_boardClk/I (gf180mcu_fd_sc_mcu7t5v0__clkbuf_8)
-    32    0.46    0.93    0.84   11.09 ^ chip_core/mprj/j1a/clkbuf_3_0_0_boardClk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_8)
+                  0.46    0.01   10.12 ^ chip_core/mprj/j1a/clkbuf_3_0_0_boardClk/I (gf180mcu_fd_sc_mcu7t5v0__clkbuf_8)
+    16    0.29    0.61    0.63   10.75 ^ chip_core/mprj/j1a/clkbuf_3_0_0_boardClk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_8)
                                          chip_core/mprj/j1a/clknet_3_0_0_boardClk (net)
-                  0.93    0.01   11.10 ^ chip_core/mprj/j1a/clkbuf_7_5_0_boardClk/I (gf180mcu_fd_sc_mcu7t5v0__clkbuf_8)
-    12    0.19    0.41    0.58   11.68 ^ chip_core/mprj/j1a/clkbuf_7_5_0_boardClk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_8)
-                                         chip_core/mprj/j1a/clknet_7_5_0_boardClk (net)
-                  0.41    0.00   11.69 ^ chip_core/mprj/j1a/clkbuf_leaf_32_boardClk/I (gf180mcu_fd_sc_mcu7t5v0__clkbuf_16)
-     5    0.03    0.11    0.31   12.00 ^ chip_core/mprj/j1a/clkbuf_leaf_32_boardClk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_16)
-                                         chip_core/mprj/j1a/clknet_leaf_32_boardClk (net)
-                  0.11    0.00   12.00 ^ chip_core/mprj/j1a/_51724_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
-                          0.10   12.10   clock uncertainty
-                         -0.25   11.84   clock reconvergence pessimism
-                          0.22   12.06   library removal time
-                                 12.06   data required time
+                  0.62    0.03   10.78 ^ chip_core/mprj/j1a/clkbuf_6_1_0_boardClk/I (gf180mcu_fd_sc_mcu7t5v0__clkbuf_8)
+     4    0.08    0.21    0.41   11.19 ^ chip_core/mprj/j1a/clkbuf_6_1_0_boardClk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_8)
+                                         chip_core/mprj/j1a/clknet_6_1_0_boardClk (net)
+                  0.21    0.00   11.19 ^ chip_core/mprj/j1a/clkbuf_7_2__f_boardClk/I (gf180mcu_fd_sc_mcu7t5v0__clkbuf_16)
+    10    0.14    0.19    0.34   11.53 ^ chip_core/mprj/j1a/clkbuf_7_2__f_boardClk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_16)
+                                         chip_core/mprj/j1a/clknet_7_2__leaf_boardClk (net)
+                  0.19    0.00   11.53 ^ chip_core/mprj/j1a/clkbuf_leaf_6_boardClk/I (gf180mcu_fd_sc_mcu7t5v0__clkbuf_16)
+     4    0.02    0.09    0.26   11.79 ^ chip_core/mprj/j1a/clkbuf_leaf_6_boardClk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_16)
+                                         chip_core/mprj/j1a/clknet_leaf_6_boardClk (net)
+                  0.09    0.00   11.79 ^ chip_core/mprj/j1a/_52011_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                          0.10   11.89   clock uncertainty
+                         -0.25   11.64   clock reconvergence pessimism
+                          0.22   11.86   library removal time
+                                 11.86   data required time
 -----------------------------------------------------------------------------
-                                 12.06   data required time
-                                -27.73   data arrival time
+                                 11.86   data required time
+                                -27.66   data arrival time
 -----------------------------------------------------------------------------
-                                 15.66   slack (MET)
+                                 15.80   slack (MET)
 
 
 Startpoint: chip_core/_37874_ (falling edge-triggered flip-flop clocked by clk)
-Endpoint: chip_core/mprj/j1a/_51843_ (removal check against rising-edge clock clk)
+Endpoint: chip_core/mprj/j1a/_51892_ (removal check against rising-edge clock clk)
 Path Group: asynchronous
 Path Type: min
 
@@ -317,16 +320,16 @@ Fanout     Cap    Slew   Delay    Time   Description
      2    0.01    0.09    0.23   26.56 v chip_core/wire1741/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_4)
                                          chip_core/net1741 (net)
                   0.09    0.00   26.56 v chip_core/mprj/j1a/input11/I (gf180mcu_fd_sc_mcu7t5v0__clkbuf_3)
-     8    0.09    0.42    0.43   26.99 v chip_core/mprj/j1a/input11/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_3)
+     8    0.10    0.43    0.44   27.00 v chip_core/mprj/j1a/input11/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_3)
                                          chip_core/mprj/j1a/net11 (net)
-                  0.42    0.01   27.00 v chip_core/mprj/j1a/_38974_/I (gf180mcu_fd_sc_mcu7t5v0__buf_1)
-     4    0.04    0.39    0.52   27.53 v chip_core/mprj/j1a/_38974_/Z (gf180mcu_fd_sc_mcu7t5v0__buf_1)
-                                         chip_core/mprj/j1a/_17776_ (net)
-                  0.39    0.00   27.53 v chip_core/mprj/j1a/_40604_/I (gf180mcu_fd_sc_mcu7t5v0__clkinv_1)
-     1    0.01    0.24    0.21   27.74 ^ chip_core/mprj/j1a/_40604_/ZN (gf180mcu_fd_sc_mcu7t5v0__clkinv_1)
-                                         chip_core/mprj/j1a/_00060_ (net)
-                  0.24    0.00   27.74 ^ chip_core/mprj/j1a/_51843_/SETN (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
-                                 27.74   data arrival time
+                  0.43    0.02   27.02 v chip_core/mprj/j1a/_39272_/I (gf180mcu_fd_sc_mcu7t5v0__buf_1)
+     4    0.03    0.30    0.47   27.49 v chip_core/mprj/j1a/_39272_/Z (gf180mcu_fd_sc_mcu7t5v0__buf_1)
+                                         chip_core/mprj/j1a/_17950_ (net)
+                  0.30    0.00   27.49 v chip_core/mprj/j1a/_40484_/I (gf180mcu_fd_sc_mcu7t5v0__clkinv_1)
+     1    0.01    0.21    0.18   27.67 ^ chip_core/mprj/j1a/_40484_/ZN (gf180mcu_fd_sc_mcu7t5v0__clkinv_1)
+                                         chip_core/mprj/j1a/_00059_ (net)
+                  0.21    0.00   27.67 ^ chip_core/mprj/j1a/_51892_/SETN (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                 27.67   data arrival time
 
                           0.00    0.00   clock clk (rise edge)
                           0.00    0.00   clock source latency
@@ -402,30 +405,33 @@ Fanout     Cap    Slew   Delay    Time   Description
      2    0.02    0.09    0.23    9.21 ^ chip_core/clkbuf_opt_2_1_clock_ctrl.core_clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_20)
                                          chip_core/clknet_opt_2_1_clock_ctrl.core_clk (net)
                   0.09    0.00    9.21 ^ chip_core/mprj/j1a/clkbuf_0_boardClk/I (gf180mcu_fd_sc_mcu7t5v0__clkbuf_16)
-     4    0.27    0.31    0.38    9.58 ^ chip_core/mprj/j1a/clkbuf_0_boardClk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_16)
+     4    0.24    0.28    0.36    9.57 ^ chip_core/mprj/j1a/clkbuf_0_boardClk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_16)
                                          chip_core/mprj/j1a/clknet_0_boardClk (net)
-                  0.31    0.02    9.61 ^ chip_core/mprj/j1a/clkbuf_1_0_0_boardClk/I (gf180mcu_fd_sc_mcu7t5v0__clkbuf_8)
-     8    0.30    0.64    0.62   10.23 ^ chip_core/mprj/j1a/clkbuf_1_0_0_boardClk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_8)
+                  0.29    0.03    9.59 ^ chip_core/mprj/j1a/clkbuf_1_0_0_boardClk/I (gf180mcu_fd_sc_mcu7t5v0__clkbuf_8)
+     8    0.21    0.46    0.51   10.11 ^ chip_core/mprj/j1a/clkbuf_1_0_0_boardClk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_8)
                                          chip_core/mprj/j1a/clknet_1_0_0_boardClk (net)
-                  0.64    0.02   10.25 ^ chip_core/mprj/j1a/clkbuf_3_0_0_boardClk/I (gf180mcu_fd_sc_mcu7t5v0__clkbuf_8)
-    32    0.46    0.93    0.84   11.09 ^ chip_core/mprj/j1a/clkbuf_3_0_0_boardClk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_8)
+                  0.46    0.01   10.12 ^ chip_core/mprj/j1a/clkbuf_3_0_0_boardClk/I (gf180mcu_fd_sc_mcu7t5v0__clkbuf_8)
+    16    0.29    0.61    0.63   10.75 ^ chip_core/mprj/j1a/clkbuf_3_0_0_boardClk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_8)
                                          chip_core/mprj/j1a/clknet_3_0_0_boardClk (net)
-                  0.93    0.01   11.10 ^ chip_core/mprj/j1a/clkbuf_7_5_0_boardClk/I (gf180mcu_fd_sc_mcu7t5v0__clkbuf_8)
-    12    0.19    0.41    0.58   11.68 ^ chip_core/mprj/j1a/clkbuf_7_5_0_boardClk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_8)
-                                         chip_core/mprj/j1a/clknet_7_5_0_boardClk (net)
-                  0.41    0.00   11.69 ^ chip_core/mprj/j1a/clkbuf_leaf_32_boardClk/I (gf180mcu_fd_sc_mcu7t5v0__clkbuf_16)
-     5    0.03    0.11    0.31   12.00 ^ chip_core/mprj/j1a/clkbuf_leaf_32_boardClk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_16)
-                                         chip_core/mprj/j1a/clknet_leaf_32_boardClk (net)
-                  0.11    0.00   12.00 ^ chip_core/mprj/j1a/_51843_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
-                          0.10   12.10   clock uncertainty
-                         -0.25   11.84   clock reconvergence pessimism
-                          0.22   12.06   library removal time
-                                 12.06   data required time
+                  0.62    0.03   10.78 ^ chip_core/mprj/j1a/clkbuf_6_1_0_boardClk/I (gf180mcu_fd_sc_mcu7t5v0__clkbuf_8)
+     4    0.08    0.21    0.41   11.19 ^ chip_core/mprj/j1a/clkbuf_6_1_0_boardClk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_8)
+                                         chip_core/mprj/j1a/clknet_6_1_0_boardClk (net)
+                  0.21    0.00   11.19 ^ chip_core/mprj/j1a/clkbuf_7_2__f_boardClk/I (gf180mcu_fd_sc_mcu7t5v0__clkbuf_16)
+    10    0.14    0.19    0.34   11.53 ^ chip_core/mprj/j1a/clkbuf_7_2__f_boardClk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_16)
+                                         chip_core/mprj/j1a/clknet_7_2__leaf_boardClk (net)
+                  0.19    0.00   11.53 ^ chip_core/mprj/j1a/clkbuf_leaf_6_boardClk/I (gf180mcu_fd_sc_mcu7t5v0__clkbuf_16)
+     4    0.02    0.09    0.26   11.79 ^ chip_core/mprj/j1a/clkbuf_leaf_6_boardClk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_16)
+                                         chip_core/mprj/j1a/clknet_leaf_6_boardClk (net)
+                  0.09    0.00   11.79 ^ chip_core/mprj/j1a/_51892_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                          0.10   11.89   clock uncertainty
+                         -0.25   11.64   clock reconvergence pessimism
+                          0.22   11.86   library removal time
+                                 11.86   data required time
 -----------------------------------------------------------------------------
-                                 12.06   data required time
-                                -27.74   data arrival time
+                                 11.86   data required time
+                                -27.67   data arrival time
 -----------------------------------------------------------------------------
-                                 15.67   slack (MET)
+                                 15.81   slack (MET)
 
 
 min:

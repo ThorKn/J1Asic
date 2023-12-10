@@ -11,7 +11,7 @@ module J1Asic (
   input  wire [2:0]    extInt,
   input  wire [7:0]    pmodA_read,
   output wire [7:0]    pmodA_write,
-  output wire [7:0]    pmodA_writeEnable,
+  output wire [7:0]    pmodA_oeb,
   input  wire          rx,
   output wire          tx,
   input  wire          tdi,
@@ -29,6 +29,12 @@ module J1Asic (
 
   assign io_oeb_high = 8'b11111111;
   assign io_oeb_low = 2'b0;
+
+  // Invert the Pmod writeEnable to become the OEB for the Efabless caravel
+  // OEB works high=input and low=output, Pmod GPIO in spinalHDl is inverted to that.
+  wire       [7:0]   pmodA_writeEnable;
+  assign pmodA_oeb = !pmodA_writeEnable;
+ 
 
   wire                bufferCC_5_io_dataIn;
   wire       [7:0]    coreArea_cpu_intVec;

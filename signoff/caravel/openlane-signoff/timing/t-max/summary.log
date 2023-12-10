@@ -4,7 +4,7 @@ SUMMARY
 
  corner|     min delay |  min reg2reg |    max delay |  max reg2reg |      max cap |     max slew
 -------------------------------------------------------------------------------------------------
-  t-max|           met |          met |          met |          met |   vio(-0.05) |   vio(-1.33)
+  t-max|           met |          met |          met |          met |   vio(-0.04) |   vio(-0.44)
 
 violating reg2reg min reports
 
@@ -24,7 +24,7 @@ exec> report_check_types \
         -format end \
         -violators
 design: caravel
-time: Sun Dec 10 01:33:47 UTC 2023
+time: Sun Dec 10 16:14:29 UTC 2023
 
 --------------------------------------------------------------------------------------------
 REPORT
@@ -35,63 +35,26 @@ max slew
 
 Pin                                    Limit    Slew   Slack
 ------------------------------------------------------------
-chip_core/mprj/j1a/_53164_/D            4.00    5.33   -1.33 (VIOLATED)
-chip_core/mprj/j1a/ANTENNA__53164__D/I    4.00    5.33   -1.33 (VIOLATED)
-chip_core/mprj/j1a/_44853_/ZN           4.00    5.33   -1.33 (VIOLATED)
-chip_core/mprj/j1a/_32978_/A2           4.00    4.72   -0.72 (VIOLATED)
-chip_core/mprj/j1a/ANTENNA__32978__A2/I    4.00    4.72   -0.72 (VIOLATED)
-chip_core/mprj/j1a/_32977_/ZN           4.00    4.70   -0.70 (VIOLATED)
-chip_core/mprj/j1a/ANTENNA__35058__A2/I    4.00    4.55   -0.55 (VIOLATED)
-chip_core/mprj/j1a/_35058_/A2           4.00    4.55   -0.55 (VIOLATED)
-chip_core/mprj/j1a/_35057_/ZN           4.00    4.54   -0.54 (VIOLATED)
-chip_core/mprj/j1a/ANTENNA__34547__A2/I    4.00    4.53   -0.53 (VIOLATED)
-chip_core/mprj/j1a/_34547_/A2           4.00    4.53   -0.53 (VIOLATED)
-chip_core/mprj/j1a/_34546_/ZN           4.00    4.51   -0.51 (VIOLATED)
-chip_core/mprj/j1a/_29587_/A1           4.00    4.50   -0.50 (VIOLATED)
-chip_core/mprj/j1a/ANTENNA__29587__A1/I    4.00    4.50   -0.50 (VIOLATED)
-chip_core/mprj/j1a/_29578_/ZN           4.00    4.48   -0.48 (VIOLATED)
-chip_core/mprj/j1a/_27073_/A1           4.00    4.44   -0.44 (VIOLATED)
-chip_core/mprj/j1a/ANTENNA__27073__A1/I    4.00    4.44   -0.44 (VIOLATED)
-chip_core/mprj/j1a/_27065_/ZN           4.00    4.43   -0.43 (VIOLATED)
-chip_core/mprj/j1a/ANTENNA__25954__A1/I    4.00    4.42   -0.42 (VIOLATED)
-chip_core/mprj/j1a/_25954_/A1           4.00    4.42   -0.42 (VIOLATED)
-chip_core/mprj/j1a/_25931_/ZN           4.00    4.40   -0.40 (VIOLATED)
-chip_core/mprj/j1a/_30154_/A1           4.00    4.29   -0.29 (VIOLATED)
-chip_core/mprj/j1a/ANTENNA__30154__A1/I    4.00    4.29   -0.29 (VIOLATED)
-chip_core/mprj/j1a/_30146_/ZN           4.00    4.28   -0.28 (VIOLATED)
-chip_core/mprj/j1a/ANTENNA__29299__A1/I    4.00    4.25   -0.25 (VIOLATED)
-chip_core/mprj/j1a/_29299_/A1           4.00    4.25   -0.25 (VIOLATED)
-chip_core/mprj/j1a/_29291_/ZN           4.00    4.24   -0.24 (VIOLATED)
-chip_core/mprj/j1a/_28177_/A1           4.00    4.20   -0.20 (VIOLATED)
-chip_core/mprj/j1a/ANTENNA__28177__A1/I    4.00    4.20   -0.20 (VIOLATED)
-chip_core/mprj/j1a/_28168_/ZN           4.00    4.19   -0.19 (VIOLATED)
-chip_core/mprj/j1a/ANTENNA__26801__A1/I    4.00    4.16   -0.16 (VIOLATED)
-chip_core/mprj/j1a/_26801_/A1           4.00    4.16   -0.16 (VIOLATED)
-chip_core/mprj/j1a/_26794_/ZN           4.00    4.15   -0.15 (VIOLATED)
-chip_core/mprj/j1a/ANTENNA__32441__A2/I    4.00    4.12   -0.12 (VIOLATED)
-chip_core/mprj/j1a/_32441_/A2           4.00    4.12   -0.12 (VIOLATED)
-chip_core/mprj/j1a/_32440_/ZN           4.00    4.11   -0.11 (VIOLATED)
-chip_core/mprj/j1a/_27356_/A1           4.00    4.06   -0.06 (VIOLATED)
-chip_core/mprj/j1a/ANTENNA__27356__A1/I    4.00    4.06   -0.06 (VIOLATED)
-chip_core/mprj/j1a/_27345_/ZN           4.00    4.05   -0.05 (VIOLATED)
-chip_core/mprj/j1a/ANTENNA__33764__A2/I    4.00    4.05   -0.05 (VIOLATED)
-chip_core/mprj/j1a/_33764_/A2           4.00    4.05   -0.05 (VIOLATED)
-chip_core/mprj/j1a/ANTENNA__28757__A1/I    4.00    4.04   -0.04 (VIOLATED)
-chip_core/mprj/j1a/_28757_/A1           4.00    4.04   -0.04 (VIOLATED)
-chip_core/mprj/j1a/ANTENNA__34817__A2/I    4.00    4.04   -0.04 (VIOLATED)
-chip_core/mprj/j1a/_34817_/A2           4.00    4.04   -0.04 (VIOLATED)
-chip_core/mprj/j1a/_33763_/ZN           4.00    4.04   -0.04 (VIOLATED)
-chip_core/mprj/j1a/_28750_/ZN           4.00    4.04   -0.04 (VIOLATED)
-chip_core/mprj/j1a/_34816_/ZN           4.00    4.04   -0.04 (VIOLATED)
-chip_core/mprj/j1a/_35258_/A2           4.00    4.02   -0.02 (VIOLATED)
-chip_core/mprj/j1a/ANTENNA__35258__A2/I    4.00    4.02   -0.02 (VIOLATED)
-chip_core/mprj/j1a/_35257_/ZN           4.00    4.01   -0.01 (VIOLATED)
+chip_core/mprj/j1a/_26305_/A1           4.00    4.44   -0.44 (VIOLATED)
+chip_core/mprj/j1a/ANTENNA__26305__A1/I    4.00    4.44   -0.44 (VIOLATED)
+chip_core/mprj/j1a/_26297_/ZN           4.00    4.42   -0.42 (VIOLATED)
+chip_core/mprj/j1a/_35432_/A1           4.00    4.38   -0.38 (VIOLATED)
+chip_core/mprj/j1a/ANTENNA__35432__A1/I    4.00    4.38   -0.38 (VIOLATED)
+chip_core/mprj/j1a/_35426_/ZN           4.00    4.36   -0.36 (VIOLATED)
+chip_core/mprj/j1a/_34629_/A2           4.00    4.24   -0.24 (VIOLATED)
+chip_core/mprj/j1a/ANTENNA__34629__A2/I    4.00    4.24   -0.24 (VIOLATED)
+chip_core/mprj/j1a/_34627_/ZN           4.00    4.23   -0.23 (VIOLATED)
+chip_core/mprj/j1a/_33693_/A1           4.00    4.20   -0.20 (VIOLATED)
+chip_core/mprj/j1a/ANTENNA__33693__A1/I    4.00    4.20   -0.20 (VIOLATED)
+chip_core/mprj/j1a/_33684_/ZN           4.00    4.19   -0.19 (VIOLATED)
 
 max capacitance
 
 Pin                                    Limit     Cap   Slack
 ------------------------------------------------------------
-chip_core/mprj/j1a/_44853_/ZN           0.13    0.18   -0.05 (VIOLATED)
-chip_core/mprj/j1a/_48972_/ZN           0.34    0.35   -0.01 (VIOLATED)
-chip_core/mprj/j1a/_49800_/ZN           0.34    0.34   -0.00 (VIOLATED)
+chip_core/mprj/j1a/_34627_/ZN           0.25    0.29   -0.04 (VIOLATED)
+chip_core/mprj/j1a/_48690_/ZN           0.34    0.35   -0.01 (VIOLATED)
+chip_core/mprj/j1a/_35345_/ZN           0.25    0.26   -0.01 (VIOLATED)
+chip_core/mprj/j1a/_25545_/ZN           0.34    0.34   -0.00 (VIOLATED)
+chip_core/mprj/j1a/_45709_/ZN           0.34    0.34   -0.00 (VIOLATED)
 

@@ -5583,16 +5583,23 @@ Found 964 partially unannotated drivers.
  chip_core/max_length2075/Z
   chip_core/mprj/j1a/ANTENNA_input12_I/I
   chip_core/mprj/j1a/input12/I
- chip_core/mprj/j1a/J1Asic_136/ZN
- chip_core/mprj/j1a/J1Asic_137/ZN
- chip_core/mprj/j1a/J1Asic_138/Z
- chip_core/mprj/j1a/J1Asic_139/Z
- chip_core/mprj/j1a/J1Asic_140/Z
- chip_core/mprj/j1a/J1Asic_141/Z
- chip_core/mprj/j1a/J1Asic_142/Z
- chip_core/mprj/j1a/J1Asic_143/Z
- chip_core/mprj/j1a/J1Asic_144/Z
- chip_core/mprj/j1a/J1Asic_145/Z
+ chip_core/mprj/j1a/J1Asic_110/ZN
+ chip_core/mprj/j1a/J1Asic_111/ZN
+ chip_core/mprj/j1a/J1Asic_112/ZN
+ chip_core/mprj/j1a/J1Asic_113/ZN
+ chip_core/mprj/j1a/J1Asic_114/ZN
+ chip_core/mprj/j1a/J1Asic_115/ZN
+ chip_core/mprj/j1a/J1Asic_116/ZN
+ chip_core/mprj/j1a/J1Asic_117/ZN
+ chip_core/mprj/j1a/J1Asic_118/ZN
+ chip_core/mprj/j1a/J1Asic_119/Z
+ chip_core/mprj/j1a/J1Asic_120/Z
+ chip_core/mprj/j1a/J1Asic_121/Z
+ chip_core/mprj/j1a/J1Asic_122/Z
+ chip_core/mprj/j1a/J1Asic_123/Z
+ chip_core/mprj/j1a/J1Asic_124/Z
+ chip_core/mprj/j1a/J1Asic_125/Z
+ chip_core/mprj/j1a/J1Asic_126/Z
  chip_core/mprj/j1a/output16/Z
  chip_core/mprj/j1a/output17/Z
  chip_core/mprj/j1a/output18/Z
@@ -5604,13 +5611,6 @@ Found 964 partially unannotated drivers.
  chip_core/mprj/j1a/output24/Z
  chip_core/mprj/j1a/output25/Z
  chip_core/mprj/j1a/output26/Z
- chip_core/mprj/j1a/output27/Z
- chip_core/mprj/j1a/output28/Z
- chip_core/mprj/j1a/output29/Z
- chip_core/mprj/j1a/output30/Z
- chip_core/mprj/j1a/output31/Z
- chip_core/mprj/j1a/output32/Z
- chip_core/mprj/j1a/output33/Z
  chip_core/output100/Z
   padframe/mprj_pads\[23\]/PDRV1
  chip_core/output101/Z

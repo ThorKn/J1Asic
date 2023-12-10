@@ -253,9 +253,9 @@ exec> read_def /home/moss/eda_tools_gf180_new/caravel_user_project/def/J1Asic.de
 [INFO ODB-0094] 		Created 100000 Insts
 [INFO ODB-0094] 		Created 200000 Insts
 [INFO ODB-0130]     Created 48 pins.
-[INFO ODB-0131]     Created 202845 components and 852554 component-terminals.
-[INFO ODB-0132]     Created 2 special nets and 739248 connections.
-[INFO ODB-0133]     Created 31577 nets and 113306 connections.
+[INFO ODB-0131]     Created 202768 components and 852925 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 738940 connections.
+[INFO ODB-0133]     Created 31698 nets and 113985 connections.
 [INFO ODB-0134] Finished DEF file: /home/moss/eda_tools_gf180_new/caravel_user_project/def/J1Asic.def
 exec> define_process_corner -ext_model_index 0 X
 [INFO RCX-0431] Defined process_corner X with ext_model_index 0
@@ -264,21 +264,21 @@ exec> extract_parasitics  -ext_model_file /home/moss/eda_tools_gf180_new/pdk/gf1
 [INFO RCX-0008] extracting parasitics of J1Asic ...
 [INFO RCX-0435] Reading extraction model file /home/moss/eda_tools_gf180_new/pdk/gf180mcuD/libs.tech//openlane/rules.openrcx.gf180mcuD.nom ...
 [INFO RCX-0436] RC segment generation J1Asic (max_merge_res 50.0) ...
-[INFO RCX-0040] Final 148721 rc segments
+[INFO RCX-0040] Final 151202 rc segments
 [INFO RCX-0439] Coupling Cap extraction J1Asic ...
 [INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
-[INFO RCX-0043] 272315 wires to be extracted
-[INFO RCX-0442] 6% completion -- 16801 wires have been extracted
-[INFO RCX-0442] 29% completion -- 80347 wires have been extracted
-[INFO RCX-0442] 48% completion -- 132374 wires have been extracted
-[INFO RCX-0442] 60% completion -- 165943 wires have been extracted
-[INFO RCX-0442] 83% completion -- 228379 wires have been extracted
-[INFO RCX-0442] 100% completion -- 272315 wires have been extracted
-[INFO RCX-0045] Extract 31577 nets, 180296 rsegs, 180296 caps, 407432 ccs
+[INFO RCX-0043] 278843 wires to be extracted
+[INFO RCX-0442] 6% completion -- 16857 wires have been extracted
+[INFO RCX-0442] 30% completion -- 84317 wires have been extracted
+[INFO RCX-0442] 48% completion -- 135681 wires have been extracted
+[INFO RCX-0442] 60% completion -- 168500 wires have been extracted
+[INFO RCX-0442] 84% completion -- 236003 wires have been extracted
+[INFO RCX-0442] 100% completion -- 278843 wires have been extracted
+[INFO RCX-0045] Extract 31698 nets, 182898 rsegs, 182898 caps, 418389 ccs
 [INFO RCX-0015] Finished extracting J1Asic.
 exec> write_spef /home/moss/eda_tools_gf180_new/caravel_user_project/signoff/J1Asic/openlane-signoff/spef/J1Asic.nom.spef
 [INFO RCX-0016] Writing SPEF ...
-[INFO RCX-0443] 31577 nets finished
+[INFO RCX-0443] 31698 nets finished
 [INFO RCX-0017] Finished writing SPEF ...
 exec> read_spef /home/moss/eda_tools_gf180_new/caravel_user_project/signoff/J1Asic/openlane-signoff/spef/J1Asic.nom.spef
 spef: /home/moss/eda_tools_gf180_new/caravel_user_project/signoff/J1Asic/openlane-signoff/spef/J1Asic.nom.spef

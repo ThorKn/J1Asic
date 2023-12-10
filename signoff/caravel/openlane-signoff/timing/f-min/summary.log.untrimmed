@@ -10,7 +10,7 @@ exec> report_check_types \
         -format end \
         -violators
 design: caravel
-time: Sun Dec 10 01:34:15 UTC 2023
+time: Sun Dec 10 16:14:57 UTC 2023
 
 --------------------------------------------------------------------------------------------
 REPORT
@@ -28,13 +28,13 @@ padframe/mprj_pads[3]/PAD               1.00    3.50   -2.50 (VIOLATED)
 padframe/mprj_pads[4]/PAD               1.00    3.50   -2.50 (VIOLATED)
 padframe/mprj_pads[0]/PAD               1.00    2.13   -1.13 (VIOLATED)
 padframe/mprj_pads[15]/PAD              1.00    2.13   -1.13 (VIOLATED)
+padframe/mprj_pads[17]/PAD              1.00    2.13   -1.13 (VIOLATED)
 padframe/mprj_pads[10]/PAD              1.00    2.13   -1.13 (VIOLATED)
 padframe/mprj_pads[11]/PAD              1.00    2.13   -1.13 (VIOLATED)
 padframe/mprj_pads[12]/PAD              1.00    2.13   -1.13 (VIOLATED)
 padframe/mprj_pads[13]/PAD              1.00    2.13   -1.13 (VIOLATED)
 padframe/mprj_pads[14]/PAD              1.00    2.13   -1.13 (VIOLATED)
 padframe/mprj_pads[16]/PAD              1.00    2.13   -1.13 (VIOLATED)
-padframe/mprj_pads[17]/PAD              1.00    2.13   -1.13 (VIOLATED)
 padframe/mprj_pads[18]/PAD              1.00    2.13   -1.13 (VIOLATED)
 padframe/mprj_pads[19]/PAD              1.00    2.13   -1.13 (VIOLATED)
 padframe/mprj_pads[1]/PAD               1.00    2.13   -1.13 (VIOLATED)
@@ -42,6 +42,7 @@ padframe/mprj_pads[20]/PAD              1.00    2.13   -1.13 (VIOLATED)
 padframe/mprj_pads[21]/PAD              1.00    2.13   -1.13 (VIOLATED)
 padframe/mprj_pads[22]/PAD              1.00    2.13   -1.13 (VIOLATED)
 padframe/mprj_pads[23]/PAD              1.00    2.13   -1.13 (VIOLATED)
+padframe/mprj_pads[35]/PAD              1.00    2.13   -1.13 (VIOLATED)
 padframe/mprj_pads[24]/PAD              1.00    2.13   -1.13 (VIOLATED)
 padframe/mprj_pads[25]/PAD              1.00    2.13   -1.13 (VIOLATED)
 padframe/mprj_pads[26]/PAD              1.00    2.13   -1.13 (VIOLATED)
@@ -53,7 +54,6 @@ padframe/mprj_pads[31]/PAD              1.00    2.13   -1.13 (VIOLATED)
 padframe/mprj_pads[32]/PAD              1.00    2.13   -1.13 (VIOLATED)
 padframe/mprj_pads[33]/PAD              1.00    2.13   -1.13 (VIOLATED)
 padframe/mprj_pads[34]/PAD              1.00    2.13   -1.13 (VIOLATED)
-padframe/mprj_pads[35]/PAD              1.00    2.13   -1.13 (VIOLATED)
 padframe/mprj_pads[36]/PAD              1.00    2.13   -1.13 (VIOLATED)
 padframe/mprj_pads[37]/PAD              1.00    2.13   -1.13 (VIOLATED)
 padframe/mprj_pads[5]/PAD               1.00    2.13   -1.13 (VIOLATED)
@@ -64,13 +64,4 @@ padframe/mprj_pads[9]/PAD               1.00    2.13   -1.13 (VIOLATED)
 padframe/flash_clk_pad/PAD              1.00    1.81   -0.81 (VIOLATED)
 padframe/flash_csb_pad/PAD              1.00    1.81   -0.81 (VIOLATED)
 padframe/flash_io0_pad/PAD              1.00    1.81   -0.81 (VIOLATED)
-chip_core/mprj/j1a/_53164_/D            2.60    2.63   -0.03 (VIOLATED)
-chip_core/mprj/j1a/ANTENNA__53164__D/I    2.60    2.63   -0.03 (VIOLATED)
-chip_core/mprj/j1a/_44853_/ZN           2.60    2.62   -0.02 (VIOLATED)
-
-max capacitance
-
-Pin                                    Limit     Cap   Slack
-------------------------------------------------------------
-chip_core/mprj/j1a/_44853_/ZN           0.13    0.14   -0.01 (VIOLATED)
 
